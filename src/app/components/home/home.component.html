@@ -1,0 +1,23 @@
+<p>
+    recetario op</p>
+
+<div class="dia">
+    <label for="day-recipe">Elige un dia de receta:  </label>
+
+    <select name="" [(ngModel)]="day" (change)=selectDay()>
+        <option value="" selected disabled>あああああ</option>
+        <option value="Lunes">Lunes</option>
+        <option value="Martes">Martes</option>
+        <option value="Miercoles">Miercoles</option>
+        <option value="Jueves">Jueves</option>
+        <option value="Viernes">Viernes</option>
+        <option value="Sabado">Sabado</option>
+        <option value="Domingo">Fomingo</option>
+    </select>
+</div>
+
+<div class="container">
+    <div *ngFor="let item of [1,2,3]">
+        <app-recipecard></app-recipecard>
+    </div>
+</div>
